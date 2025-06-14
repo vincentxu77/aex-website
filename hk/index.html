@@ -4,14 +4,16 @@
 <span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navigation><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=#home>首頁</a></li><li class=nav-item><a class=nav-link href=#about>關於我們</a></li><li class=nav-item><a class=nav-link href=#team>團隊</a></li><li class=nav-item><a class=nav-link href=#contact>聯繫我們</a></li></ul><div class=language-switch><a href=# class=lang-btn onclick=switchLanguage()><img src=/aex-website/images/icons/language.svg alt=language class=lang-icon></a></div></div></nav></div></section><script>function updateNavbarStyle(){const o=document.getElementById("mainNav"),t=window.scrollY,n=window.innerHeight*.7,i=window.innerWidth<=991,a=.2+Math.min(t/n,1)*.78;o.style.backgroundColor=`rgba(240, 245, 243, ${a})`;const e=document.querySelector(".navbar-dark .navbar-nav .nav-link.active"),s=document.querySelectorAll(".navbar-dark .navbar-nav .nav-link:not(.active)");t>=n||i?(e&&e.style.setProperty("color","#4CAF50","important"),s.forEach(e=>{e.style.setProperty("color","#000","important")})):(e&&e.style.setProperty("color","#00ff0a","important"),s.forEach(e=>{e.style.setProperty("color","#000","important")}))}window.addEventListener("scroll",updateNavbarStyle),document.addEventListener("DOMContentLoaded",function(){const e=document.querySelector('.navbar-nav .nav-link[href="#home"]');e&&e.classList.add("active"),updateNavbarStyle();const s=document.querySelectorAll(".scroll-to-top");s.forEach(e=>{e.addEventListener("click",function(e){e.preventDefault(),e.stopPropagation();const t={top:0,behavior:"smooth"};return window.scrollTo(t),!1})});const t=document.querySelector(".navbar-collapse"),n=document.querySelector(".navbar-toggler");document.addEventListener("click",function(e){const s=t.contains(e.target)||n.contains(e.target);!s&&t.classList.contains("show")&&n.click()})});function switchLanguage(){const e=window.location.pathname,s="/aex-website/".replace(/\/$/,""),n=s.replace(/^\//,"");let t;if(e.includes("/hk/"))t=e.replace("/hk/","/");else if(n&&e.includes(n)){const s=e.split(n)[1]||"";t="/"+n+"/hk"+(s.startsWith("/")?s:"/"+s)}else if(e==="/"||e==="")t=s?s+"hk/":"/hk/";else{const n=e.indexOf("/");if(n===0){const n=e.indexOf("/",1);n!==-1?t=e.substring(0,n)+"/hk"+e.substring(n):t="/hk"+e}else t="/hk/"+e}t=t.replace(/\/\//g,"/"),window.location.pathname=t}</script><section id=home class=home style=background-size:;background-position:50%;background-repeat:no-repeat data-bg-image=/aex-website/images/backgrounds/home.webp data-temp-bg-image=/aex-website/images/backgrounds/homeTemp.webp><img loading decoding=async src=/aex-website/images/backgrounds/home.webp alt class="d-none img" height width><div class=block><h1 class=animate-title><span style=--char-index:0>A</span>
 <span style=--char-index:1>E</span>
 <span style=--char-index:2>X</span>
-<span style=--char-index:3></span><span style=--char-index:4>M</span>
+<span style=--char-index:3>&nbsp;</span>
+<span style=--char-index:4>M</span>
 <span style=--char-index:5>A</span>
 <span style=--char-index:6>R</span>
 <span style=--char-index:7>K</span>
 <span style=--char-index:8>E</span>
 <span style=--char-index:9>T</span>
 <span style=--char-index:10>S</span>
-<span style=--char-index:11></span><span style=--char-index:12>讓</span>
+<span style=--char-index:11>&nbsp;</span>
+<span style=--char-index:12>讓</span>
 <span style=--char-index:13>市</span>
 <span style=--char-index:14>場</span>
 <span style=--char-index:15>更</span>
